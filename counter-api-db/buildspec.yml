@@ -7,7 +7,7 @@ phases:
     commands:
     #  - sam package --template-file counter-api-db/template.yml --s3-bucket $BUCKETNAME --output-template-file packaged-template.yml
       - sam build --template-file counter-api-db/template.yml
-      - sam deploy --template-file counter-api-db/template.yml --no-confirm-changeset --no-fail-on-empty-changeset
+      - sam deploy --template-file counter-api-db/template.yml --stack-name counter-api-db --no-confirm-changeset --no-fail-on-empty-changeset
 artifacts:
   files:
     - packaged-template.yml
