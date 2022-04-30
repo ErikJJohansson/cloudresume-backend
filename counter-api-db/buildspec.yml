@@ -5,8 +5,7 @@ phases:
         python: 3.9
   build:
     commands:
-      - sam package --template-file counter-api-db/template.yml --s3-bucket $BUCKETNAME --output-template-file packaged-template.yml
-    #  - sam deploy --template-file packaged-template.yml --stack-name counter-api-db --capabilities CAPABILITY_IAM  --region us-east-1 --s3-bucket $BUCKETNAME
+      - sam package --template-file counter-api-db/template.yml --s3-bucket $S3_BUCKET --output-template-file packaged-template.yml
 artifacts:
   files:
     - packaged-template.yml

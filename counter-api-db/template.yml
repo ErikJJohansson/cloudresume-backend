@@ -19,6 +19,7 @@ Resources:
           Properties:
             Path: /
             Method: POST
+  
   DynamoDBTable:
     Type: AWS::DynamoDB::Table
     Properties:
