@@ -17,8 +17,8 @@ Resources:
         ApiEvent:
           Type: Api
           Properties:
-            Path: /
-            Method: POST
+            Path: /getcount
+            Method: GET
   
   DynamoDBTable:
     Type: AWS::DynamoDB::Table
